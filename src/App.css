@@ -9,32 +9,98 @@
   
 }
 
-.header-wrapper {
-  background-color: #222;
-  display: inline-block;
-  text-align: center;
-  padding: 10px;
+.App-header {
+  position: fixed;
+  height: 10%;
+  color: white;
   width: 100%;
+  z-index: 1;
+  /*display: table;*/
+  /*table-layout: fixed;*/
+  text-decoration: none;
 }
 
-.App-header {
-  height: 40px;
+.App-header:hover {
+  text-decoration: none;
+}
+
+/*
+.btn {
+  text-decoration: none;
+  vertical-align: middle;
   text-align: center;
+  border: 1px solid #222;
+  background-color: #222;
+  color: white;
+  width: 20%;
+}
+*/
+.active {
+  background-color: #ff2323;
+  text-decoration: none;
+  color: white;
+}
+/*
+.btn:hover {
+  background-color: red;
+  text-decoration: none;
+  color: white;
+}
+*/
+
+.container-fluid {
   color: white;
 }
 
-.header-span {
-  padding: 10%;
+.navbar {
+  background-color: #222;
+  color: white;
 }
 
-.home-wrapper {
+.a-link {
+  text-decoration: none;
+  color: white;
+}
+
+.a-link:hover {
+  text-decoration: none;
+  color: #dd1a1a;
+}
+
+.header-span {
+  color: white;
+  width: 20%;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #222;
+}
+
+.nav {
+  background-color: #222;
+  color: white;
+  /*display: inline;*/
+  width: 100%;
+}
+
+
+.parallax {
+  /*perspective: 10px;*/
+  /*height: 100vh;*/
+
+  overflow-x: hidden;
+  /*overflow-y: auto;*/
+}
+
+.home-container {
   display: inline-block;
+  position: relative;
+  height: 100vh;
 }
 
 .home-image {
-  display: inline-block;
-  padding-top: 5%;
-  margin-left: -5%;
+  display: relative;
+  margin-top: 10%;
+  margin-left: -10%;
   width: 80%;
 }
 
@@ -42,18 +108,299 @@
   display: relative;
   margin-top: -25%;
   margin-left: 60%;
-  
 }
 
 .home-heading {
   font-size: 100%;
-  font: 400 80px/1.3 'Oleo Script', Helvetica, sans-serif;
-  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  font: 400 10vh/1.5 'Oleo Script', Helvetica, sans-serif;
+  text-shadow: 1vh 1vh 0vh rgba(0,0,0,0.1);
 }
 
 .home-content-text {
   display: inline-block;
   font-size: 20%;
   font: 200 20px/1.2 'Merienda One', Helvetica, sans-serif;
-
 }
+
+ul {
+  list-style-type: none;  
+  margin-top: 5%;
+}
+
+.social-media-li {
+  display: inline;
+  margin-left: 5%;
+}
+
+.education-lis li{
+  display: inline;
+  margin-left: 5%;
+}
+
+.fa {
+  color: black;
+}
+
+.home-social-container {
+  text-align: center;
+  display: relative;
+  margin-top: 15%;
+  width: 100%;
+}
+
+
+.about-container {
+  min-height:100vh;
+  background-color:#3a3a3a;
+  display: relative;
+  width: 100%;
+  font-size: 5vh;
+  margin-top: 3%;
+}
+
+.about-content-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+
+.about-image {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.my-face-image {
+  display: inline;
+  height: auto;
+  width: 50%; 
+  margin: 20% 0 0 20%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;  
+}
+
+.about-text-content {
+  display: relative;
+  margin-left: 40%;
+  margin-top: -25%;
+  width: 40%;
+}
+
+.about-text-h1 {
+  color: white;
+  font: 400 5vh/1.5 'Oleo Script', Helvetica, sans-serif;
+}
+
+.about-text {
+  font: 200 5vh/1.2 'Merienda One', Helvetica, sans-serif;
+  font-size: 0.5em;
+  color: #7f7f7f;
+}
+
+.about-contact-me-container {
+  font-size: 0.8em;
+  font: 100 5vh/1.2 'Merienda One', Helvetica, sans-serif;
+  width: 50%;
+  color: white;
+  display: inline-block;
+  margin-left: 40%;
+  width: 40%;
+}
+
+.about-contact-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+
+.about-contact-address {
+  display: inline-block;
+}
+
+.about-contact-download {
+  position: relative;
+  margin-top: -20%;
+  margin-left: 50%;
+  font: 200 3.5vh/2.0 'Merienda One', Helvetica, sans-serif;
+}
+
+.download-resume {
+  background-color: #cbcbcb;
+  font-size: 0.8em;
+  padding: 2vh;
+  border-radius: 2vh;
+}
+
+.education-container {
+  position: relative;
+  min-height:100vh;
+  background-color: white;
+  width: 100%;
+  font-size: 3vh;
+  overflow: auto;
+  margin-top: 4%;
+}
+
+.education-wrapper {
+  display: inline;
+}
+
+.education-column-left {
+  display: inline-block;
+  width: 20%;
+  font: 100 6vh/2.0 'Oleo Script', Helvetica, sans-serif;
+}
+
+.education-title {
+  padding-top: 50%;
+  padding-left: 50%;
+}
+
+.education-hr-style {
+  width: 6em;
+  margin-top: -3%;
+  margin: auto;
+  margin-left: 34%;
+  border: 0.3vh solid #ccc;
+}
+
+.education-column-right {
+  display: relative;
+  margin-left: 35%;
+  margin-top: -10%;
+  width: 50%;
+}
+
+.education-university-name {
+  font: 200 3.5vh/2.0 'Merienda One', Helvetica, sans-serif;
+}
+
+.education-university-degree {
+  font: 200 2vh/2.0 'Merienda One', Helvetica, sans-serif;
+}
+
+.education-degree-link:link {
+  margin-top: -1%;
+  text-decoration: none;
+}
+
+.education-degree-link:hover {
+  margin-top: -1%;
+  text-decoration: none;
+}
+
+.education-university-courses {
+  width: 20%;
+  font: 200 2vh/2.0 'Merienda One', Helvetica, sans-serif;
+  /*position: absolute;*/
+}
+
+.expandable-listview_outerDiv {
+  margin-top: -5%;
+  width: 75%;
+  /*position: absolute;*/
+}
+
+.expandable-listview_listHeader{
+  color: #2e7bb3;
+  display: inline;
+  /*position: absolute;*/
+  margin-left: 5%;
+}
+
+.expandable-listview_listItems {
+  width: 60%;
+  margin left: -5%;
+  position: relative;
+  /*position: absolute;*/
+}
+
+.expandable-listview_listHeader:hover {
+  color: red;
+}
+
+.project-container {
+  position: relative;
+  min-height: 100vh;
+  margin-top: 5%;
+  background-color: white;
+  width: 100%;
+  font-size: 3vh;
+}
+
+.endof-education {
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 0.3vh solid #ccc;
+}
+
+.element-edu {
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.element-cont {
+  margin-top: -12%;
+  /*position: relative;*/
+}
+
+.element-proj {
+  margin-top: -12%;
+}
+
+section {
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.contact-container {
+  position: relative;
+  min-height: 100vh;
+  margin-top: 8%;
+  background-color:#3a3a3a;
+}
+
+.contact-title-div {
+  margin-top: 5%;
+  width: 100%;
+  font: 100 6vh/2.0 'Oleo Script', Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.contact-details-container {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  color: white;
+  font: 200 2vh/2.0 'Merienda One', Helvetica, sans-serif;
+}
+
+.contact-hr {
+  width: 60%;
+  border: 0.1vh solid white;
+  margin: 0 auto;
+  margin-top: -4%;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  /*margin-top: -4%;*/
+}
+
+.form-container {
+  color: white;
+  margin-top: 2%;
+}
+
+.form-row {
+  display: inline;
+}
+
+.control-label {
+  width: 10%;
+  display: inline;
+}
+
